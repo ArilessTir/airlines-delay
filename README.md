@@ -1,6 +1,6 @@
 ## Airlines Delay Project
 
-The goal of this project is to build ml pipline and track experimentation localy
+The goal of this project is to build ml pipeline and track experimentation localy
 
 ### Run this project
 
