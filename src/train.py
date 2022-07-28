@@ -7,7 +7,7 @@ import Config
 import mlflow
 from handle_data import handle_data
 
-mlflow.set_tracking_uri("sqlite:///mlflow.db")
+mlflow.set_tracking_uri("http://ec2-54-87-168-40.compute-1.amazonaws.com:5000")
 mlflow.set_experiment("airlines-experiment")
 
 
