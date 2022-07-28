@@ -6,8 +6,11 @@ from pipeline import prepross, model, pipeline
 import Config
 import mlflow
 from handle_data import handle_data
+from decouple import config
 
-mlflow.set_tracking_uri("http://ec2-54-87-168-40.compute-1.amazonaws.com:5000")
+TRACKING_URI_DNS = config('TRACKING_URI_DNS')
+
+mlflow.set_tracking_uri(f"http://{TRACKING_URI_DNS}:5000")
 mlflow.set_experiment("airlines-experiment")
 
 

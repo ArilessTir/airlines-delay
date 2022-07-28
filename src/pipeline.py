@@ -1,13 +1,13 @@
-from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import RidgeClassifier
 from sklearn.pipeline import Pipeline
 from preprocessing import preprocessor
 
 model = {
-    'name':LogisticRegression,
+    'name':RidgeClassifier,
     'model_params':{    
         'max_iter':200,
         'random_state':400,
-        'C':10
+        'alpha':1
     }
 }
 
