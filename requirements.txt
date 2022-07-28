@@ -8,3 +8,5 @@ gunicorn
 mlflow
 jupyter
 pandas-profiling
+boto3
+psycopg2-binary
